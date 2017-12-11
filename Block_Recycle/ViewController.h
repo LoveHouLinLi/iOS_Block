@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void (^ViewControllerBlock)(void);
+
 @interface ViewController : UIViewController
+
 
 
 @end

@@ -59,14 +59,82 @@
                     <view key="view" contentMode="scaleToFill" id="Arg-13-WwB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blG-3n-kd0">
+                                <rect key="frame" x="71" y="83" width="233" height="30"/>
+                                <state key="normal" title="testWeakSelfNilFailure"/>
+                                <connections>
+                                    <action selector="blockTestThree:" destination="k3H-Ec-NOG" eventType="touchUpInside" id="Rxu-Pr-qmW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvS-KI-cam">
+                                <rect key="frame" x="121" y="430" width="133" height="30"/>
+                                <state key="normal" title="next page"/>
+                                <connections>
+                                    <segue destination="v4a-TI-MFK" kind="push" id="I6z-aN-591"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HZ8-0a-bEp">
+                                <rect key="frame" x="170" y="133" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Uqi-BY-CeH"/>
+                                    <constraint firstAttribute="height" constant="50" id="vTj-Vj-2Yg"/>
+                                </constraints>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Ra-JWB">
+                                <rect key="frame" x="62" y="191" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="setWeakSelfNil"/>
+                                <connections>
+                                    <action selector="setWeakSelfNil:" destination="k3H-Ec-NOG" eventType="touchUpInside" id="P0Q-M5-CPW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poo-c2-BXu">
+                                <rect key="frame" x="111" y="229" width="152" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="strongSelf"/>
+                                <connections>
+                                    <action selector="strongSelf:" destination="k3H-Ec-NOG" eventType="touchUpInside" id="RnN-1S-0eP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="blG-3n-kd0" firstAttribute="centerX" secondItem="Arg-13-WwB" secondAttribute="centerX" id="69G-PS-OSZ"/>
+                            <constraint firstItem="HZ8-0a-bEp" firstAttribute="top" secondItem="blG-3n-kd0" secondAttribute="bottom" constant="20" id="6hH-Fu-EEi"/>
+                            <constraint firstItem="blG-3n-kd0" firstAttribute="top" secondItem="h2d-pr-2Ml" secondAttribute="top" constant="19" id="7Fc-Fl-wlJ"/>
+                            <constraint firstItem="UvS-KI-cam" firstAttribute="leading" secondItem="h2d-pr-2Ml" secondAttribute="leading" constant="121" id="U9l-5b-cpC"/>
+                            <constraint firstItem="blG-3n-kd0" firstAttribute="centerX" secondItem="UvS-KI-cam" secondAttribute="centerX" id="b5O-SS-FU2"/>
+                            <constraint firstItem="blG-3n-kd0" firstAttribute="leading" secondItem="h2d-pr-2Ml" secondAttribute="leading" constant="71" id="mn7-qg-iQK"/>
+                            <constraint firstItem="h2d-pr-2Ml" firstAttribute="bottom" secondItem="UvS-KI-cam" secondAttribute="bottom" constant="207" id="s7T-o4-ADR"/>
+                            <constraint firstItem="HZ8-0a-bEp" firstAttribute="leading" secondItem="h2d-pr-2Ml" secondAttribute="leading" constant="170" id="zg4-s5-QeW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h2d-pr-2Ml"/>
                     </view>
                     <navigationItem key="navigationItem" id="24o-5X-HGM"/>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="HZ8-0a-bEp" id="dCB-Gu-O5j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZW-Nd-ZMq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="719" y="-6"/>
+            <point key="canvasLocation" x="717.60000000000002" y="-6.746626686656672"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9b9-9D-HpD">
+            <objects>
+                <viewController id="v4a-TI-MFK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ntd-jX-Si1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l0U-3u-Tkw"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hU2-NC-sdY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1hy-f0-WKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-17"/>
         </scene>
     </scenes>
 </document>

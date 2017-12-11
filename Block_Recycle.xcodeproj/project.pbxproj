@@ -66,10 +66,10 @@
 			children = (
 				BBEBF1C41FDA98E200A70A3D /* AppDelegate.h */,
 				BBEBF1C51FDA98E200A70A3D /* AppDelegate.m */,
-				BBEBF1C71FDA98E200A70A3D /* ViewController.h */,
-				BBEBF1C81FDA98E200A70A3D /* ViewController.m */,
 				BBEBF1DD1FDA9B0800A70A3D /* RootViewController.h */,
 				BBEBF1DE1FDA9B0800A70A3D /* RootViewController.m */,
+				BBEBF1C71FDA98E200A70A3D /* ViewController.h */,
+				BBEBF1C81FDA98E200A70A3D /* ViewController.m */,
 				BBEBF1DA1FDA992900A70A3D /* EOCNetworkFetcher.h */,
 				BBEBF1DB1FDA992900A70A3D /* EOCNetworkFetcher.m */,
 				BBEBF1CA1FDA98E200A70A3D /* Main.storyboard */,
@@ -293,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPN9LTK8YN;
 				INFOPLIST_FILE = Block_Recycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DeLongYang.Block-Recycle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YPN9LTK8YN;
 				INFOPLIST_FILE = Block_Recycle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DeLongYang.Block-Recycle";
 				PRODUCT_NAME = "$(TARGET_NAME)";

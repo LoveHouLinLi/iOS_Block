@@ -34,10 +34,26 @@
 {
     // 这里只是设置 并没有 调起block  模拟假设3s 后返回了数据
     self.completionHandler=handler;
-//    if (handler) {
-//        handler(nil);
-//    }
-    [self performSelector:@selector(p_requestCompleted) withObject:nil afterDelay:3.0];
+    if (handler) {
+        handler(_downloadedData);
+    }
+}
+
+- (void)startHandler:(EOCNetworkFetcherRequestHandler )handler
+{
+    if (handler) {
+        handler(_downloadedData);
+    }
+}
+
+- (void)startThreeHandler:(EOCNetworkFetcherThreeHandler)handler
+{
+    // 将下载的数据 回调回去
+    self.completionHandler =  handler;
+    if (handler) {
+        handler(_downloadedData);
+    }
+    self.completionHandler = nil;
     
 }
 
