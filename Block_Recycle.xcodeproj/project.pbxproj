@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB5281891FE11E5900D28AA6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5281881FE11E5900D28AA6 /* Person.m */; };
 		BBEBF1C61FDA98E200A70A3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEBF1C51FDA98E200A70A3D /* AppDelegate.m */; };
 		BBEBF1C91FDA98E200A70A3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBEBF1C81FDA98E200A70A3D /* ViewController.m */; };
 		BBEBF1CC1FDA98E200A70A3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBEBF1CA1FDA98E200A70A3D /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB5281871FE11E5900D28AA6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		BB5281881FE11E5900D28AA6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		BBEBF1C11FDA98E200A70A3D /* Block_Recycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Block_Recycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBEBF1C41FDA98E200A70A3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBEBF1C51FDA98E200A70A3D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +75,8 @@
 				BBEBF1C81FDA98E200A70A3D /* ViewController.m */,
 				BBEBF1DA1FDA992900A70A3D /* EOCNetworkFetcher.h */,
 				BBEBF1DB1FDA992900A70A3D /* EOCNetworkFetcher.m */,
+				BB5281871FE11E5900D28AA6 /* Person.h */,
+				BB5281881FE11E5900D28AA6 /* Person.m */,
 				BBEBF1CA1FDA98E200A70A3D /* Main.storyboard */,
 				BBEBF1CD1FDA98E200A70A3D /* Assets.xcassets */,
 				BBEBF1CF1FDA98E200A70A3D /* LaunchScreen.storyboard */,
@@ -152,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5281891FE11E5900D28AA6 /* Person.m in Sources */,
 				BBEBF1DC1FDA992900A70A3D /* EOCNetworkFetcher.m in Sources */,
 				BBEBF1C91FDA98E200A70A3D /* ViewController.m in Sources */,
 				BBEBF1D41FDA98E200A70A3D /* main.m in Sources */,

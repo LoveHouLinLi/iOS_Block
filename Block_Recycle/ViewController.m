@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "EOCNetworkFetcher.h"
+#import "Person.h"
 
 @interface ViewController ()<EOCNetworkFetcherDelegate>
 
@@ -19,6 +20,7 @@
 
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicatorView;
 
+@property (nonatomic,strong)Person *person;
 
 @end
 
@@ -47,7 +49,8 @@
     
     //
 //    weakSelf = self;
-
+//    [self testPerson];
+    [self testPesonTwo];
 }
 
 - (void)dealloc
@@ -301,6 +304,31 @@
 {
     [self testStrongSelfInBlock];
 }
+
+#pragma mark ---- Person  对比和 swift 中区别
+
+
+/**
+ 会造成 内存泄漏
+ */
+- (void)testPerson
+{
+    self.person = [[Person alloc]initWithHandler:^(NSData *data) {
+        self.fetchedData = data;
+    }];
+}
+
+- (void)testPesonTwo
+{
+    self.person = [[Person alloc] init];
+    self.person.handler = ^(NSData *data){
+        _fetchedData = data;
+    };
+    NSLog(@"test person two");
+    // 如果设置 self.person 为nil 就没有循环引用了
+//    self.person = nil;
+}
+
 
 
 @end
